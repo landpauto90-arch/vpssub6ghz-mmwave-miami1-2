@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NRS Miami 5G Server</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>NRS Miami 5G Server</h1>
+    <p>Cloud Powered Server Deployment</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Server Status</h2>
+      <div id="status">Checking...</div>
+    </section>
+
+    <section class="card">
+      <h2>Server Information</h2>
+
+      <ul>
+        <li><strong>Location:</strong> Miami</li>
+        <li><strong>Server Type:</strong> VPS Cloud Server</li>
+        <li><strong>Network:</strong> 5G / Cloudflare CDN</li>
+        <li><strong>Platform:</strong> Node.js + NGINX</li>
+      </ul>
+
+    </section>
+
+    <section class="card">
+      <h2>Deployment Commands</h2>
+
+      <pre>
+pkg update -y
+pkg install openssh git curl -y
+ssh root@YOUR_SERVER_IP
+      </pre>
+
+    </section>
+
+    <section class="card">
+      <h2>Features</h2>
+
+      <div class="features">
+        <div class="feature-box">Cloudflare Ready</div>
+        <div class="feature-box">5G Optimized</div>
+        <div class="feature-box">Node.js Server</div>
+        <div class="feature-box">PM2 Auto Restart</div>
+        <div class="feature-box">GitHub Deploy</div>
+        <div class="feature-box">Android + Termux</div>
+      </div>
+
+    </section>
+
+    <section class="card">
+      <h2>GitHub Deployment</h2>
+
+      <button onclick="deployMessage()">
+        Deploy Project
+      </button>
+
+      <p id="deploy-result"></p>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 NRS Server Technologies</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
